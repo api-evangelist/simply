@@ -1,7 +1,26 @@
 aid: simply
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/simply.png
 name: Simply
-description: 'Simply is a company surfaced as a portfolio company of gv and added to the API Evangelist
-  network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment pipeline.'
+description: 'Simply (hellosimply.com) is a consumer creative-learning company that
+  makes AI-powered mobile apps for teaching music and art to beginners, with the stated
+  mission of making the pursuit of creative hobbies simple and fun for all. Its product
+  suite spans Simply Piano, Simply Guitar, Simply Sing, and the free Simply Tune tuner
+  for music, plus Simply Draw for art, and a set of emerging extended-reality experiences
+  including Simply Piano XR, Simply Piano for Apple Vision Pro and Google Android XR,
+  and Simply Draw for Meta AI Glasses. Backed by GV, Simply is a direct-to-consumer
+  subscription business and does not publish a public developer API, SDK, or developer
+  portal; press inquiries are handled at press@hellosimply.com.'
 url: https://raw.githubusercontent.com/api-evangelist/simply/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,10 +30,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Consumer
+- Music Education
+- Art Education
+- Mobile Apps
+- Creative Learning
+- Artificial Intelligence
+- Extended Reality
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +47,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/simply-domain-security.yml
 - type: Website
   url: https://www.hellosimply.com
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
